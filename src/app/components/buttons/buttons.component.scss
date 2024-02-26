@@ -1,0 +1,36 @@
+.buttons-container {
+  width: fit-content;
+  padding: 2rem;
+
+  display: flex;
+  gap: 0.875rem;
+  flex-direction: column;
+
+  box-shadow: 0 0.5rem 0.5rem 0.25rem rgba(221, 221, 221, 0.1);
+  border-radius: 0.5rem;
+  border: 0.125rem solid #a82192;
+
+  &.light {
+    color: #303030;
+    background-color: #fcf7ff;
+  }
+
+  &.dark {
+    color: #fcf7ff;
+    background-color: #30303050;
+  }
+
+  .buttons-row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 4rem auto;
+    align-items: center;
+    gap: 0.875rem;
+
+    .f-row {
+      display: flex;
+      flex-direction: row;
+      gap: 0.875rem;
+    }
+  }
+}

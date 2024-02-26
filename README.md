@@ -14,11 +14,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Dependências [ref](https://angular.dev/tools/cli/setup-local)
 install node lts
-install yarn or [bun](https://bun.sh/package-manager)
+install [bun](https://bun.sh/package-manager) or yarn
 
 
-Novo app [ref](https://angular.dev/tools/cli/setup-local)
-ng new --minimal true --package-manager yarn
+Novo [app](https://angular.dev/tools/cli/setup-local)
+ng new --minimal true
+
+<!-- Install [tailwind](https://tailwindcss.com/docs/guides/angular)
+bun add -D tailwindcss postcss autoprefixer
+npx tailwindcss init -->
 
 ## Code scaffolding
 
