@@ -29,16 +29,6 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
       box-shadow: 0 0.5rem 0.5rem 0.25rem rgba(221, 221, 221, 0.1);
       border-radius: 0.5rem;
       border: 0.125rem solid #a82192;
-
-      &.light {
-        color: #303030;
-        background-color: #fcf7ff;
-      }
-
-      &.dark {
-        color: #fcf7ff;
-        background-color: #30303050;
-      }
     }
   `
 })

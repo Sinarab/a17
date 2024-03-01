@@ -4,6 +4,7 @@ import { ButtonsToggleComponent } from '../components/buttons-toggle/buttons-tog
 import { ExpansionPanelComponent } from '../components/expansion-panel/expansion-panel.component';
 import { GridListComponent } from '../components/grid-list/grid-list.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { CardsComponent } from '../components/cards/cards.component';
 
 @Component({
   selector: 'app-showcase',
@@ -13,11 +14,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ButtonsToggleComponent,
     ExpansionPanelComponent,
     GridListComponent,
-    MatGridListModule
+    MatGridListModule,
+    CardsComponent
   ],
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss']
 })
 export class ShowcaseComponent {
-
+  
 }
