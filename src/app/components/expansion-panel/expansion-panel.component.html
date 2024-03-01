@@ -55,6 +55,35 @@
       </mat-action-row>
     </mat-expansion-panel>
 
+    <mat-expansion-panel disabled>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Destination </mat-panel-title>
+        <mat-panel-description>
+          Type the country name
+          <mat-icon>map</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <mat-form-field>
+        <mat-label>Country</mat-label>
+        <input matInput />
+      </mat-form-field>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Day of the trip </mat-panel-title>
+        <mat-panel-description>
+          Inform the date you wish to travel
+          <mat-icon>date_range</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div>
+        Content
+      </div>
+
+    </mat-expansion-panel>
     <mat-expansion-panel
       [expanded]="step === 2"
       (opened)="setStep(2)"

@@ -8,9 +8,6 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     <section class="buttons-toggle-container light-theme light"
              [class.dark]="theme === 'dark'"
              [class.dark-theme]="theme === 'dark'">
-      <h2>
-        Buttons @if (theme === 'light') { Light } @else { Dark } Theme
-      </h2>
       <p>
         <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
           <mat-button-toggle value="bold">Bold</mat-button-toggle>

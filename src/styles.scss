@@ -61,6 +61,11 @@ $m3-dark-theme: matx.define-theme(
   --mdc-fab-small-container-shape: 8px;
 }
 
+/* Expansion Panel */
+.mat-expansion-panel-header-description {
+  justify-content: space-between;
+}
+
 /* You can add global styles to this file, and also import other style files */
 
 html,

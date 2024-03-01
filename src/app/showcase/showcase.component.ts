@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { ButtonsComponent } from '../components/buttons/buttons.component';
 import { ButtonsToggleComponent } from '../components/buttons-toggle/buttons-toggle.component';
 import { ExpansionPanelComponent } from '../components/expansion-panel/expansion-panel.component';
+import { GridListComponent } from '../components/grid-list/grid-list.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-showcase',
@@ -9,21 +11,11 @@ import { ExpansionPanelComponent } from '../components/expansion-panel/expansion
   imports: [
     ButtonsComponent,
     ButtonsToggleComponent,
-    ExpansionPanelComponent
+    ExpansionPanelComponent,
+    GridListComponent,
+    MatGridListModule
   ],
-  template: `
-    <div class="light-theme showcase-container">
-      <div class="auto-grid">
-        <buttons></buttons>
-        <buttons [theme]="'dark'"></buttons>
-        <div style="display: flex; flex-direction: column; gap: 1rem">
-          <buttons-toggle></buttons-toggle>
-          <buttons-toggle [theme]="'dark'"></buttons-toggle>
-        </div>
-        <expansion-panel></expansion-panel>
-      </div>
-    </div>
-  `,
+  templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss']
 })
 export class ShowcaseComponent {
