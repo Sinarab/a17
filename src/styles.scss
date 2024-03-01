@@ -7,7 +7,7 @@
 $m3-light-theme: matx.define-theme(
   (
     color: (
-      primary: matx.$m3-violet-palette,
+      primary: matx.$m3-magenta-palette,
       tertiary: matx.$m3-blue-palette,
     ),
   )
@@ -17,7 +17,7 @@ $m3-dark-theme: matx.define-theme(
   (
     color: (
       theme-type: dark,
-      primary: matx.$m3-violet-palette,
+      primary: matx.$m3-magenta-palette,
       tertiary: matx.$m3-blue-palette,
     ),
   )
@@ -30,11 +30,35 @@ $m3-dark-theme: matx.define-theme(
 
 .light-theme {
   @include mat.all-component-themes($m3-light-theme);
-  background-color: #141218;
 }
 
 .dark-theme {
   @include mat.all-component-colors($m3-dark-theme);
+}
+
+/* Buttons */
+.mat-mdc-button {
+  --mdc-text-button-container-shape: 8px;
+}
+.mat-mdc-raised-button {
+  --mdc-protected-button-container-shape: 8px;
+}
+.mat-mdc-outlined-button {
+  --mdc-outlined-button-container-shape: 8px;
+}
+.mat-mdc-unelevated-button {
+  --mdc-filled-button-container-shape: 8px;
+}
+.mat-mdc-icon-button .mat-mdc-button-persistent-ripple,
+.mat-mdc-icon-button {
+  border-radius: 8px;
+}
+.mat-mdc-fab:not(.mdc-fab--extended),
+.mat-mdc-fab:not(.mdc-fab--extended) .mdc-fab__ripple {
+  --mdc-fab-container-shape: 8px;
+}
+.mat-mdc-mini-fab:not(.mdc-fab--extended) {
+  --mdc-fab-small-container-shape: 8px;
 }
 
 /* You can add global styles to this file, and also import other style files */
@@ -42,6 +66,8 @@ $m3-dark-theme: matx.define-theme(
 html,
 body {
   height: 100%;
+  background-color: #141218;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -50,6 +76,12 @@ body {
   color: rgb(248, 248, 248);
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
