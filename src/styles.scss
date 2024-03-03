@@ -84,6 +84,16 @@ div.mat-mdc-autocomplete-panel {
   --mat-option-focus-state-layer-color: rgba(206, 206, 206, 0.562);
 }
 
+/* Stepper */
+.mat-step-header:hover:not([aria-disabled]),
+.mat-step-header:hover[aria-disabled="false"] {
+  // --mat-stepper-header-hover-state-layer-color: rgba(255, 255, 255, 0);
+  --mat-stepper-header-hover-state-layer-shape: 0.25rem;
+}
+.mat-horizontal-content-container {
+  padding: .625rem !important;
+}
+
 /* You can add global styles to this file, and also import other style files */
 
 html,

@@ -12,5 +12,4 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class ButtonsComponent {
   @Input() theme: 'light' | 'dark' = 'light';
-
 }
