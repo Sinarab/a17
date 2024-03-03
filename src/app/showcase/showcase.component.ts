@@ -6,6 +6,7 @@ import { GridListComponent } from '../components/grid-list/grid-list.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { CardsComponent } from '../components/cards/cards.component';
 import { SliderComponent } from '../components/slider/slider.component';
+import { TabsComponent } from '../tabs/tabs.component';
 
 @Component({
   selector: 'app-showcase',
@@ -17,7 +18,8 @@ import { SliderComponent } from '../components/slider/slider.component';
     GridListComponent,
     MatGridListModule,
     CardsComponent,
-    SliderComponent
+    SliderComponent,
+    TabsComponent
   ],
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss']

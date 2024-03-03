@@ -1,0 +1,43 @@
+<section
+  class="slider-container light-theme light"
+  [class.dark]="theme === 'dark'"
+  [class.dark-theme]="theme === 'dark'"
+>
+  <mat-form-field>
+    <mat-label>Selected tab index</mat-label>
+    <input matInput type="number" [formControl]="selected" />
+  </mat-form-field>
+
+  <div>
+    <button
+      mat-raised-button
+      class="example-add-tab-button"
+      (click)="addTab(selectAfterAdding.checked)"
+    >
+      Add new tab
+    </button>
+    <mat-checkbox #selectAfterAdding> Select tab after adding </mat-checkbox>
+  </div>
+
+  <mat-tab-group
+    [selectedIndex]="selected.value"
+    (selectedIndexChange)="selected.setValue($event)"
+  >
+    @for (tab of tabs; track tab; let index = $index) {
+    <mat-tab [label]="tab">
+      <div class="tab-contents">
+        <h3>Contents for {{ tab }} tab</h3>
+
+        <button
+          mat-raised-button
+          class="example-delete-tab-button"
+          [disabled]="tabs.length === 1"
+          (click)="removeTab(index)"
+        >
+          Delete Tab
+        </button>
+      </div>
+    </mat-tab>
+    }
+  </mat-tab-group>
+</section>
