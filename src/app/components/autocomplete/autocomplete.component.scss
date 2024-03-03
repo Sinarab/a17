@@ -1,0 +1,11 @@
+.autocomplete-container {
+  padding: 2rem;
+
+  display: flex;
+  gap: 0.875rem;
+  flex-direction: row;
+
+  box-shadow: 0 0.5rem 0.5rem 0.25rem rgba(221, 221, 221, 0.1);
+  border-radius: 0.5rem;
+  border: 0.125rem solid #a82192;
+}

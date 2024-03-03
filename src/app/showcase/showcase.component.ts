@@ -7,6 +7,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { CardsComponent } from '../components/cards/cards.component';
 import { SliderComponent } from '../components/slider/slider.component';
 import { TabsComponent } from '../tabs/tabs.component';
+import { AutocompleteComponent } from '../components/autocomplete/autocomplete.component';
 
 @Component({
   selector: 'app-showcase',
@@ -19,7 +20,8 @@ import { TabsComponent } from '../tabs/tabs.component';
     MatGridListModule,
     CardsComponent,
     SliderComponent,
-    TabsComponent
+    TabsComponent,
+    AutocompleteComponent
   ],
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss']
