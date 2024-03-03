@@ -1,0 +1,21 @@
+.slider-container {
+  padding: 2rem;
+
+  display: flex;
+  gap: 0.875rem;
+  flex-direction: column;
+
+  box-shadow: 0 0.5rem 0.5rem 0.25rem rgba(221, 221, 221, 0.1);
+  border-radius: 0.5rem;
+  border: 0.125rem solid #a82192;
+
+  .example-section {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+  }
+
+  mat-slider {
+    width: 80%;
+  }
+}

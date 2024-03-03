@@ -5,6 +5,7 @@ import { ExpansionPanelComponent } from '../components/expansion-panel/expansion
 import { GridListComponent } from '../components/grid-list/grid-list.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { CardsComponent } from '../components/cards/cards.component';
+import { SliderComponent } from '../components/slider/slider.component';
 
 @Component({
   selector: 'app-showcase',
@@ -15,7 +16,8 @@ import { CardsComponent } from '../components/cards/cards.component';
     ExpansionPanelComponent,
     GridListComponent,
     MatGridListModule,
-    CardsComponent
+    CardsComponent,
+    SliderComponent
   ],
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss']
