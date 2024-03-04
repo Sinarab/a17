@@ -9,6 +9,7 @@ import { SliderComponent } from '../components/slider/slider.component';
 import { TabsComponent } from '../tabs/tabs.component';
 import { AutocompleteComponent } from '../components/autocomplete/autocomplete.component';
 import { StepperComponent } from '../stepper/stepper.component';
+import { BadgeComponent } from '../components/badge/badge.component';
 
 @Component({
   selector: 'app-showcase',
@@ -23,7 +24,8 @@ import { StepperComponent } from '../stepper/stepper.component';
     SliderComponent,
     TabsComponent,
     AutocompleteComponent,
-    StepperComponent
+    StepperComponent,
+    BadgeComponent
   ],
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss']

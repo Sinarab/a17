@@ -94,6 +94,17 @@ div.mat-mdc-autocomplete-panel {
   padding: .625rem !important;
 }
 
+/* Badge */
+.mat-badge-large .mat-badge-content {
+  --mat-badge-legacy-large-size-container-size: 1.75rem;
+  --mat-badge-large-size-text-size: 14px;
+}
+.mat-badge-medium .mat-badge-content {
+  --mat-badge-legacy-container-size: 1.375rem;
+  --mat-badge-text-size: 12px;
+  // margin: var(--mat-badge-container-offset);
+}
+
 /* You can add global styles to this file, and also import other style files */
 
 html,
