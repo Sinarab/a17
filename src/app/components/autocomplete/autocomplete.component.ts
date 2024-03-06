@@ -6,6 +6,7 @@ import { AsyncPipe } from '@angular/common';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { Themes } from '../types';
 
 export interface StateGroup {
   letter: string;
@@ -33,7 +34,7 @@ export const _filter = (opt: string[], value: string): string[] => {
   styleUrl: './autocomplete.component.scss'
 })
 export class AutocompleteComponent implements OnInit {
-  @Input() theme: 'light' | 'dark' = 'light';
+  @Input() theme: Themes = 'light';
   stateForm = this._formBuilder.group({
     stateGroup: '',
   });

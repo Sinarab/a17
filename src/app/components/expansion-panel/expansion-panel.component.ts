@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatAccordion, MatExpansionModule } from '@angular/material/expansion';
 import { provideNativeDateAdapter } from '@angular/material/core';
+import { Themes } from '../types';
 
 @Component({
   selector: 'expansion-panel',
@@ -25,7 +26,7 @@ import { provideNativeDateAdapter } from '@angular/material/core';
   styleUrl: './expansion-panel.component.scss'
 })
 export class ExpansionPanelComponent {
-  @Input() theme: 'light' | 'dark' = 'light';
+  @Input() theme: Themes = 'light';
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
 
   step: number | null = null;

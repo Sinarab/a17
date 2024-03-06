@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { AsyncPipe } from '@angular/common';
+import { Themes } from '../types';
 
 @Component({
   selector: 'stepper',
@@ -25,7 +26,7 @@ import { AsyncPipe } from '@angular/common';
   styleUrl: './stepper.component.scss'
 })
 export class StepperComponent {
-  @Input() theme: 'light' | 'dark' = 'light';
+  @Input() theme: Themes = 'light';
 
   firstFormGroup = this._formBuilder.group({
     firstCtrl: ['', Validators.required],

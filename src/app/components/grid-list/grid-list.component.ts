@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { Themes } from '../types';
 
 export interface Tile {
   color: string;
@@ -16,7 +17,7 @@ export interface Tile {
   styleUrl: './grid-list.component.scss'
 })
 export class GridListComponent {
-  @Input() theme: 'light' | 'dark' = 'light';
+  @Input() theme: Themes = 'light';
   tiles: Tile[] = [
     { text: 'One', cols: 3, rows: 1, color: 'lightblue' },
     { text: 'Two', cols: 1, rows: 2, color: 'lightgreen' },

@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
+import { Themes } from '../types';
 
 @Component({
   selector: 'slider',
@@ -21,7 +22,7 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './slider.component.scss'
 })
 export class SliderComponent {
-  @Input() theme: 'light' | 'dark' = 'light';
+  @Input() theme: Themes = 'light';
   disabled = false;
   max = 100;
   min = 0;

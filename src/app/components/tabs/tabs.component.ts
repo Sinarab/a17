@@ -5,6 +5,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { Themes } from '../types';
 
 @Component({
   selector: 'tabs',
@@ -22,7 +23,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   styleUrl: './tabs.component.scss'
 })
 export class TabsComponent {
-  @Input() theme: 'light' | 'dark' = 'light';
+  @Input() theme: Themes = 'light';
   tabs = ['First', 'Second', 'Third'];
   selected = new FormControl(0);
 

@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatBadgeModule } from '@angular/material/badge';
+import { Themes } from '../types';
 
 @Component({
   selector: 'badge',
@@ -11,7 +12,7 @@ import { MatBadgeModule } from '@angular/material/badge';
   styleUrl: './badge.component.scss'
 })
 export class BadgeComponent {
-  @Input() theme: 'light' | 'dark' = 'light';
+  @Input() theme: Themes = 'light';
   hidden = false;
 
   toggleBadgeVisibility() {
