@@ -6,10 +6,11 @@ import { GridListComponent } from '../components/grid-list/grid-list.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { CardsComponent } from '../components/cards/cards.component';
 import { SliderComponent } from '../components/slider/slider.component';
-import { TabsComponent } from '../tabs/tabs.component';
+import { TabsComponent } from '../components/tabs/tabs.component';
 import { AutocompleteComponent } from '../components/autocomplete/autocomplete.component';
-import { StepperComponent } from '../stepper/stepper.component';
+import { StepperComponent } from '../components/stepper/stepper.component';
 import { BadgeComponent } from '../components/badge/badge.component';
+import { BottomSheetComponent } from '../components/bottom-sheet/bottom-sheet.component';
 
 @Component({
   selector: 'app-showcase',
@@ -25,7 +26,8 @@ import { BadgeComponent } from '../components/badge/badge.component';
     TabsComponent,
     AutocompleteComponent,
     StepperComponent,
-    BadgeComponent
+    BadgeComponent,
+    BottomSheetComponent
   ],
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss']
