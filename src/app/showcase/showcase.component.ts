@@ -11,6 +11,8 @@ import { AutocompleteComponent } from '../components/autocomplete/autocomplete.c
 import { StepperComponent } from '../components/stepper/stepper.component';
 import { BadgeComponent } from '../components/badge/badge.component';
 import { BottomSheetComponent } from '../components/bottom-sheet/bottom-sheet.component';
+import { CheckboxesComponent } from '../checkboxes/checkboxes.component';
+import { ChipsComponent } from '../chips/chips.component';
 
 @Component({
   selector: 'app-showcase',
@@ -27,7 +29,9 @@ import { BottomSheetComponent } from '../components/bottom-sheet/bottom-sheet.co
     AutocompleteComponent,
     StepperComponent,
     BadgeComponent,
-    BottomSheetComponent
+    BottomSheetComponent,
+    CheckboxesComponent,
+    ChipsComponent
   ],
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss']
