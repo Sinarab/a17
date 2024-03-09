@@ -1,11 +1,11 @@
 import { Component, Input, inject } from '@angular/core';
-import { Themes } from '../components/types';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatChipInputEvent, MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { LiveAnnouncer } from '@angular/cdk/a11y';
+import { Themes } from '../types';
 
 @Component({
   selector: 'chips',

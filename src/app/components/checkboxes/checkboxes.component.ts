@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { Themes } from '../components/types';
 import { ThemePalette } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { Themes } from '../types';
 
 export interface Task {
   name: string;
