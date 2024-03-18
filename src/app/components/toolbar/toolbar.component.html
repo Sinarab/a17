@@ -1,0 +1,31 @@
+<mat-toolbar class="toolbar-container">
+  <button
+    [matMenuTriggerFor]="menu"
+    mat-icon-button
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu class="light-theme" #menu="matMenu">
+    @for (cp of componentsList; track $index) { @if (cp.available) {
+    <button mat-menu-item (click)="onNaviageToSection(cp.id)">
+      {{ cp.id }}
+    </button>
+    } }
+  </mat-menu>
+  <span>Material 3 Components</span>
+  <span class="spacer"></span>
+  <a
+    [style]="
+      'text-decoration: none; display: flex; align-items: center; gap: .5rem; font-size: 16px;'
+    "
+    href="https://www.linkedin.com/in/sinara-dias/"
+    target="_blank"
+    aria-label="Link to a personal linkedin account"
+  >
+    About me <mat-icon>3p</mat-icon>
+  </a>
+  <button (click)="onNavigateBackToTop()" [style]="'margin-left: 1rem'" mat-icon-button aria-label="Example icon-button with heart icon">
+    <mat-icon>arrow_upward</mat-icon>
+  </button>
+</mat-toolbar>

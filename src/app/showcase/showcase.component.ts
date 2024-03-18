@@ -13,29 +13,32 @@ import { BadgeComponent } from '../components/badge/badge.component';
 import { BottomSheetComponent } from '../components/bottom-sheet/bottom-sheet.component';
 import { CheckboxesComponent } from '../components/checkboxes/checkboxes.component';
 import { ChipsComponent } from '../components/chips/chips.component';
+import { ToolbarComponent } from '../components/toolbar/toolbar.component';
+import { ShowcaseComponents } from '../shared/constants';
 
 @Component({
   selector: 'app-showcase',
   standalone: true,
   imports: [
-    ButtonsComponent,
-    ButtonsToggleComponent,
-    ExpansionPanelComponent,
-    GridListComponent,
-    MatGridListModule,
-    CardsComponent,
-    SliderComponent,
-    TabsComponent,
+    // components
     AutocompleteComponent,
-    StepperComponent,
     BadgeComponent,
     BottomSheetComponent,
+    ButtonsComponent,
+    ButtonsToggleComponent,
+    CardsComponent,
     CheckboxesComponent,
-    ChipsComponent
+    ChipsComponent,
+    ExpansionPanelComponent,
+    GridListComponent,
+    SliderComponent,
+    StepperComponent,
+    TabsComponent,
+    ToolbarComponent,
   ],
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss']
 })
 export class ShowcaseComponent {
-  
+  componentsList = ShowcaseComponents;
 }

@@ -1,36 +1,47 @@
 <div class="light-theme showcase-container">
-  <div class="auto-grid">
-    <h2>Material 3 components</h2>
-    <div></div>
-    <chips></chips>
-    <chips [theme]="'dark'"></chips>
-    <checkboxes></checkboxes>
-    <checkboxes [theme]="'dark'"></checkboxes>
-    <bottom-sheet></bottom-sheet>
-    <bottom-sheet [theme]="'dark'"></bottom-sheet>
-    <badge></badge>
-    <badge [theme]="'dark'"></badge>
-    <stepper></stepper>
-    <stepper [theme]="'dark'"></stepper>
-    <autocomplete></autocomplete>
-    <autocomplete [theme]="'dark'"></autocomplete>
-    <tabs></tabs>
-    <tabs [theme]="'dark'"></tabs>
-    <buttons></buttons>
-    <buttons [theme]="'dark'"></buttons>
-    <expansion-panel></expansion-panel>
-    <expansion-panel [theme]="'dark'"></expansion-panel>
-    <grid-list></grid-list>
-    <grid-list [theme]="'dark'"></grid-list>
-    <cards></cards>
-    <cards [theme]="'dark'"></cards>
-    <slider></slider>
-    <slider [theme]="'dark'"></slider>
+  <toolbar></toolbar>
+  <div class="auto-grid" id="components-grid">
+    <chips [id]="componentsList.CHIPS"></chips>
+    <chips [theme]="'dark'" [id]="componentsList.CHIPS"></chips>
+    <checkboxes [id]="componentsList.CHECKBOX"></checkboxes>
+    <checkboxes [theme]="'dark'" [id]="componentsList.CHECKBOX"></checkboxes>
+    <bottom-sheet [id]="componentsList.BOTTOM_SHEET"></bottom-sheet>
+    <bottom-sheet
+      [theme]="'dark'"
+      [id]="componentsList.BOTTOM_SHEET"
+    ></bottom-sheet>
+    <badge [id]="componentsList.BADGE"></badge>
+    <badge [theme]="'dark'" [id]="componentsList.BADGE"></badge>
+    <stepper [id]="componentsList.STEPPER"></stepper>
+    <stepper [theme]="'dark'" [id]="componentsList.STEPPER"></stepper>
+    <autocomplete [id]="componentsList.AUTOCOMPLETE"></autocomplete>
+    <autocomplete
+      [theme]="'dark'"
+      [id]="componentsList.AUTOCOMPLETE"
+    ></autocomplete>
+    <tabs [id]="componentsList.TABS"></tabs>
+    <tabs [theme]="'dark'" [id]="componentsList.TABS"></tabs>
+    <buttons [id]="componentsList.BUTTON"></buttons>
+    <buttons [theme]="'dark'" [id]="componentsList.BUTTON"></buttons>
+    <expansion-panel [id]="componentsList.EXPANSION_PANEL"></expansion-panel>
+    <expansion-panel
+      [theme]="'dark'"
+      [id]="componentsList.EXPANSION_PANEL"
+    ></expansion-panel>
+    <grid-list [id]="componentsList.GRID_LIST"></grid-list>
+    <grid-list [theme]="'dark'" [id]="componentsList.GRID_LIST"></grid-list>
+    <cards [id]="componentsList.CARD"></cards>
+    <cards [theme]="'dark'" [id]="componentsList.CARD"></cards>
+    <slider [id]="componentsList.SLIDER"></slider>
+    <slider [theme]="'dark'" [id]="componentsList.SLIDER"></slider>
     <div style="display: flex; flex-direction: column; gap: 1rem">
-      <buttons-toggle></buttons-toggle>
+      <buttons-toggle [id]="componentsList.BUTTON_TOGGLE"></buttons-toggle>
     </div>
     <div style="display: flex; flex-direction: column; gap: 1rem">
-      <buttons-toggle [theme]="'dark'"></buttons-toggle>
+      <buttons-toggle
+        [theme]="'dark'"
+        [id]="componentsList.BUTTON_TOGGLE"
+      ></buttons-toggle>
     </div>
   </div>
 </div>
