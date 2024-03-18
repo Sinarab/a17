@@ -1,29 +1,33 @@
 # A17
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+## Running Showcase
 
-## Development server
+Use node `v21.6.2` or higher.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```bash
+bun install;
+bun start;
+```
 
-## Build
+> bun or yarn, as you wish.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## How this project was made
 
-Dependências [ref](https://angular.dev/tools/cli/setup-local)
-install node lts
-install [bun](https://bun.sh/package-manager) or yarn
+Dependencies [ref](https://angular.dev/tools/cli/setup-local)
+1. install node lts
+2. install [bun](https://bun.sh/package-manager) or yarn
+3. install angular cli
 
+Build new [app](https://angular.dev/tools/cli/setup-local)
 
-Novo [app](https://angular.dev/tools/cli/setup-local)
+> generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+
+```bash
 ng new --minimal true
+```
 
 <!-- Install [tailwind](https://tailwindcss.com/docs/guides/angular)
 bun add -D tailwindcss postcss autoprefixer
 npx tailwindcss init -->
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
