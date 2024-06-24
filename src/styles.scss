@@ -84,7 +84,7 @@ $white-2: #fcf7ff;
 
 /* Autocomplete */
 div.mat-mdc-autocomplete-panel {
-  --mat-autocomplete-background-color: $white-2;
+  --mat-autocomplete-background-color: #{$white-2};
 }
 .mat-mdc-option.mat-mdc-option-active.mdc-list-item {
   --mat-option-focus-state-layer-color: rgba(206, 206, 206, 0.562);

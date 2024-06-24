@@ -12,7 +12,7 @@ import { RouterLink } from '@angular/router';
     <img 
       alt="Animation that starts with the original red shield Angular logo and then morphs into the new hexagonal logo with a purple-to-pink gradient and bolder letter A."
       width="400" height="194"
-      loading="lazy" ngSrc="https://miro.medium.com/v2/resize:fit:700/0*UC-tiSyyd6b2JNaA">
+      loading="lazy" ngSrc="assets/angular-logo.svg">
       <button mat-flat-button [routerLink]="'/showcase'">Go to Showcase</button>
     </div>
   `,
